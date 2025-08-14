@@ -19,7 +19,7 @@ const Todo = () => {
               className="search-bar"
               type="text"
               value={task}
-              onChange={(e) => setTodo(e.target.value)}
+              onChange={(e) => setTask(e.target.value)}
             />
           </label>
           <button onClick={addTask}>Add</button>
