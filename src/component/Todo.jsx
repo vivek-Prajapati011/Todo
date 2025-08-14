@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { use } from "react";
 const Todo = () => {
   const [todo, setTodo] = useState([]);
   const [task, setTask] = useState("")
