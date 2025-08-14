@@ -18,7 +18,7 @@ const Todo = () => {
             <input
               className="search-bar"
               type="text"
-              value={todo}
+              value={task}
               onChange={(e) => setTodo(e.target.value)}
             />
           </label>
