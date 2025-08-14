@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 const Todo = () => {
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState([]);
   const submitHandler = (e) => {};
   return (
     <>
