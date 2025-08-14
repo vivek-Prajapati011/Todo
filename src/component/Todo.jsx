@@ -1,7 +1,15 @@
 import React, { useState } from "react";
+import { use } from "react";
 const Todo = () => {
   const [todo, setTodo] = useState([]);
-  const submitHandler = (e) => {};
+  const [task, setTask] = useState("")
+  const addTask = () => { 
+    if(task.trim() !== "") {
+        setTodo([...todo, task])
+        setTask("")
+    }
+  }
+  
   return (
     <>
       <div className="container">
