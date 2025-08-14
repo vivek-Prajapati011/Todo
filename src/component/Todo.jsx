@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 const Todo = () => {
-    return (
-        <>
-        <div className="container">
-          <div>
-            <label>
-              <input className="search-bar" type="text" />
-            </label>
-            <button>Add</button>
-          </div>
-           
-
-
+  const [todo, setTodo] = useState("");
+  const submitHandler = (e) => {};
+  return (
+    <>
+      <div className="container">
+        <div>
+          <label>
+            <input
+              className="search-bar"
+              type="text"
+              value={todo}
+              onChange={(e) => setTodo(e.target.value)}
+            />
+          </label>
+          <button onClick={submitHandler}>Add</button>
         </div>
-        </>
-    )
-
-}
-export default Todo
+      </div>
+    </>
+  );
+};
+export default Todo;
