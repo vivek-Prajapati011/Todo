@@ -22,7 +22,14 @@ const Todo = () => {
               onChange={(e) => setTodo(e.target.value)}
             />
           </label>
-          <button onClick={submitHandler}>Add</button>
+          <button onClick={addTask}>Add</button>
+        </div>
+        <div>
+            <ul>
+              {todo.map((item, index) => (
+            <li key={index}>{item}</li> 
+          ))}
+            </ul>
         </div>
       </div>
     </>
